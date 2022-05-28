@@ -50,6 +50,7 @@ public class day1 extends Fragment {
    public getRoomCalculator getRoomCalculator = new getRoomCalculator();
     ArrayAdapter<String> arrayAdapter;
    TextView author;
+   Toast toast;
    CheckBox cb[] = new CheckBox[2];
    DataBase database;
     String[] save_file;
@@ -77,7 +78,7 @@ public class day1 extends Fragment {
             getRoom();
         }else{
             Toast.makeText(getContext(),
-                    "Chưa có dữ liệu về phòng trọ.Hãy thêm phòng trọ.",
+                    "Chưa có dữ liệu về phòng trọ.Hãy thêm phòng trọ.kk",
                     Toast.LENGTH_SHORT).show();
         }
         setHasOptionsMenu(true);
