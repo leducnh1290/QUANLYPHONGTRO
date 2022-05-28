@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.leducanh.phongtro.Main">
+
+    <LinearLayout
+        android:id="@+id/layout_select_room"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/border_cb"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"  android:elevation="5dp"
+android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Ấn vào đây để chọn phòng.">
+
+            <AutoCompleteTextView
+                android:id="@+id/room_selected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/check_tien"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/red"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="2"
+            android:text="@string/selected_room"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/scv"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_above="@id/tinh1"
+        android:background="@drawable/shadown1"
+        android:layout_below="@+id/layout_select_room"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/layout_khuvucdien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_main"
+                android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/border_cb"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/text_bg"
+        android:padding="5dp"
+        android:text="Điện"
+        android:textAllCaps="true"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/check_tiendien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:text="@string/da_dong_tien_dien" />
+</RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/dienlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dienmoi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Số Điện mới"
+                            android:imeOptions="actionNext"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/diencu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="Số Điện cũ"
+                            android:inputType="number"
+                            android:nextFocusDown="@id/nuocmoi" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tiendien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/text_bg"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Tổng tiền diện"
+                    android:textIsSelectable="true"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/ngancach1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/layout_khuvucdien"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/text_bg" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_main"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/layout_khuvucnuoc"
+                android:layout_below="@+id/ngancach1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/border_cb"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/nuoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/text_bg"
+                        android:padding="5dp"
+                        android:text="Nuớc"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/check_tiennuoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/da_dong_tien_nuoc" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/nuoclayout"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/nuoc"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/nuocmoi"
+                            android:imeOptions="actionNext"
+                            android:hint="Số Nuớc mới"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:layout_height="match_parent" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/nuoccu"
+                            android:hint="Số Nước cũ"
+                            android:imeOptions="actionDone"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:layout_height="match_parent" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tiennuoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nuoclayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_bg"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Tổng tiền nước"
+                    android:textIsSelectable="true"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/ngancach2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/layout_khuvucnuoc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/text_bg" />
+
+            <TextView
+                android:id="@+id/tientong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ngancach2"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/text_bg"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Tổng tất cả"
+                android:textIsSelectable="true"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+                android:layout_below="@+id/tientong"
+            android:textColorLink="#FF0000"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Thiết kế và lập trình bởi Lê Đức Anh" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tinh1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Lưu dữ liệu" />
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/room"
+        android:title="Thêm Phòng Vào Dãy 1"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/thongke"
+        android:title="Thống kê dãy 1"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/thongkeall"
+        android:title="Thống kê cả 2 dãy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nhapxuat"
+        android:title="Nhập/xuất dữ liệu"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/reset"
+        android:title="Reset tháng mới"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/author"
+        android:title="Author"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "487046830923",
+    "firebase_url": "https://ducanh-123.firebaseio.com",
+    "project_id": "ducanh-123",
+    "storage_bucket": "ducanh-123.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487046830923:android:48a0ad98f968258d7c66ce",
+        "android_client_info": {
+          "package_name": "com.leducanh.phongtro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487046830923-s9aularbp8bs2csvti6g718pkdussi9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAywRpqKPCzFtSPN4V25alTUhBz6jkdcDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487046830923-s9aularbp8bs2csvti6g718pkdussi9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

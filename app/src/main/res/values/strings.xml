@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Tính tiền phòng trọ</string>
+    <string name="day_1">Dãy 1</string>
+    <string name="day_2">Dãy 2</string>
+    <string name="ok"><![CDATA[<b>Xác nhận</b>]]></string>
+    <string name="thongke">Thống kê</string>
+    <string name="addroom_note"><![CDATA[<b><p style=\'color:#FF0000;\'>Lưu ý mỗi phòng cách nhau bằng dấu phẩy</b>]]></string>
+    <string name="not_found_data">Chưa có dữ liệu !</string>
+    <string name="not_found_data_on_cloud">Không tồn tại dữ liệu !</string>
+    <string name="pass">pass</string>
+    <string name="data">Data</string>
+    <string name="Room">Room</string>
+    <string name="import_data_success">Nhập dữ liệu thành công.Tiến hành restart</string>
+    <string name="save_data">Lưu dữ liệu</string>
+    <string name="get_data">Tải dữ liệu</string>
+    <string name="upload">Đang tải dữ liệu lên...</string>
+    <string name="download">Đang tải dữ liệu về...</string>
+    <string name="input_key_uptocloud">Nhập tên bản lưu sau đó nhấn thực hiện, để tiến hành lưu dữ liệu lên cloud</string>
+    <string name="input_key_clone_data_from_server">Nhập tên bản lưu sau đó nhấn thực hiện, để tiến hành đồng bộ dữ liệu về máy.</string>
+    <string name="updata_to_server">Lưu dữ liệu lên cloud</string>
+    <string name="getdata_from_server">Nhập dữ liệu về máy</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="selected_room">Hãy chọn phòng.</string>
+    <string name="da_dong_tien_dien">Đã đóng tiền điện</string>
+    <string name="da_dong_tien_nuoc">Đã đóng tiền nước</string>
+</resources>
