@@ -12,8 +12,16 @@ android {
         targetSdk 30
         versionCode 2
         versionName "2.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            moduleName "hello-jni"
+            abiFilters 'armeabi-v7a', 'x86', 'arm64-v8a', 'x86_64'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
     }
     buildTypes {
         release {
@@ -28,7 +36,6 @@ android {
     }
 
 }
-
 dependencies {
 
     implementation 'com.google.android.material:material:1.4.0'

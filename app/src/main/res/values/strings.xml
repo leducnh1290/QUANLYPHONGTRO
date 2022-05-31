@@ -7,8 +7,6 @@
     <string name="addroom_note"><![CDATA[<b><p style=\'color:#FF0000;\'>Lưu ý mỗi phòng cách nhau bằng dấu phẩy</b>]]></string>
     <string name="not_found_data">Chưa có dữ liệu !</string>
     <string name="not_found_data_on_cloud">Không tồn tại dữ liệu !</string>
-    <string name="pass">pass</string>
-    <string name="data">Data</string>
     <string name="Room">Room</string>
     <string name="import_data_success">Nhập dữ liệu thành công.Tiến hành restart</string>
     <string name="save_data">Lưu dữ liệu</string>

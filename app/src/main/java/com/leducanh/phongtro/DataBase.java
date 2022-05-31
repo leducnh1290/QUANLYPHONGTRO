@@ -13,11 +13,17 @@ public class DataBase {
         this.ctx = context;
     }
     public DatabaseReference Data(){
-        databaseReference[0] = firebaseDatabase.getReference(ctx.getString(R.string.data));
+        databaseReference[0] = firebaseDatabase.getReference(GetKeyData());
         return databaseReference[0];
     }
     public DatabaseReference Pass(){
-        databaseReference[1] = firebaseDatabase.getReference(ctx.getString(R.string.pass));
+        databaseReference[1] = firebaseDatabase.getReference(GetKey());
         return databaseReference[1];
     }
+    static {
+        System.loadLibrary("native-lib");
+    }
+
+    private native String GetKey();
+    private native String GetKeyData();
 }
