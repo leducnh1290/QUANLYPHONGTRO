@@ -13,7 +13,4 @@ JNIEXPORT jstring
         std::string key_data = "Data";
         return env->NewStringUTF(key_data.c_str());
     }
-    public string DataBase(){
-        return "2";
-    }
 }
