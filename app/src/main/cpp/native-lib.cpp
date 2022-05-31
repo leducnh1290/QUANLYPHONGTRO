@@ -2,7 +2,7 @@
 #include <string>
 
 extern "C" {
-
+// create by duc anh
     JNIEXPORT jstring
     Java_com_leducanh_phongtro_DataBase_GetKey(JNIEnv *env, jobject object) {
         std::string api_key = "PhongTroGetPass@2004";
